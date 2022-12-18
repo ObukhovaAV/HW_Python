@@ -3,5 +3,9 @@
 
 N = int (input ('Введите N - '))
 print (N)
-for i in range (N+1):
-   
+my_list = []
+f = 1
+for i in range (1, N+1):
+    f = f * i
+    my_list.append (f) 
+print (my_list)  
