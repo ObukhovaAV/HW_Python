@@ -11,8 +11,8 @@ num_list = []
 for i in range (-N, N+1):
     num_list.append (i)
 print (num_list)
-if 1 <= pos_one <= len(num_list) and 1 <= pos_two <= len(num_list):
+if 0 < pos_one <= len(num_list) and 0 < pos_two <= len(num_list):
     comp = num_list [(pos_one - 1)] * num_list [(pos_two - 1)]
     print ('Произведение элементов на указанных позициях = ', comp)
 else:
-    print ('Таких позиций нет в списке')
+    print ('Нет значений для этих позиций')
