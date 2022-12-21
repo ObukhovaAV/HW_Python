@@ -9,6 +9,4 @@ while number:
     number = number // 2
     my_list.append (number_2)
 my_list.reverse ()
-print ('Число в двоичном исчислении = ', end='')
-for i in range (len(my_list)):
-    print (my_list[i], end='')
+print ('Число в двоичном исчислении = ', "".join(map(str, my_list))) 
