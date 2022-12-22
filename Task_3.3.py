@@ -2,7 +2,6 @@
 #Без использования встроенной функции преобразования, без строк.
 
 number = int (input ('Введите число - '))
-print (number)
 my_list = []
 while number:
     number_2 = number % 2
