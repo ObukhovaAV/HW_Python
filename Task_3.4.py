@@ -14,17 +14,15 @@ for i in range (len(my_list)):
     my_list[i] = int (my_list[i]*100)
     my_list[i] = (my_list[i])%100
 
-max = my_list[0]
+max = min = my_list[0]
 for i in range (len(my_list)):    
     if my_list[i] > max:
        max = my_list[i]
-a = max
 
-min = my_list[0]
 for i in range (len(my_list)):    
     if my_list[i] < min:
         min = my_list[i]   
-b = min     
+a, b = max, min     
 diff = a - b
 print ('Разница между максимальным и минимальным значением  дробной части = ', diff)
 
