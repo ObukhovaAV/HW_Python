@@ -2,7 +2,9 @@
 
 from decimal import Decimal
 
-number = Decimal(input('Введите число - '))
-d = input ('Введите зададанную точность "0.0001" - ')
-number = number.quantize(Decimal(d))
-print(number)       
+def accurancy(number, d):
+    number = Decimal(number)
+    number = number.quantize(Decimal(d))
+    return number
+
+print (accurancy(input('Введите число - '), input('Введите заданную точность "0.0001" - ')))
