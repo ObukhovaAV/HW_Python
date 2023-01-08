@@ -2,9 +2,11 @@
 # Задача - сформировать файл, содержащий сумму многочленов.
 
 import polynom1
-print(polynom1.polynomial(3))
 import polynom2
-print(polynom2.polynomial(4))
+#a = print(int(input('Задайте длину первого многочлена')))
+#b = print(int(input('Задайте длину второго многочлена')))
+print(polynom1.polynomial(5))
+print(polynom2.polynomial(3))
 data1 = open('poly1.txt', 'r')
 data2 = open('poly2.txt', 'r')
 line_count1 = 0
@@ -17,7 +19,7 @@ if line_count1 == line_count2:
         line1 = line1.replace('= 0', '+')
     for line2 in data2:    
         with open ('poly.txt', 'a') as new_f:
-            new_f.write(f'{line1} {line2}')
+            new_f.write(f'{line1.rstrip()} {line2}')
     
         
     
