@@ -3,10 +3,8 @@
 
 import polynom1
 import polynom2
-#a = print(int(input('Задайте длину первого многочлена')))
-#b = print(int(input('Задайте длину второго многочлена')))
-print(polynom1.polynomial(5))
-print(polynom2.polynomial(3))
+print(polynom1.polynomial(int(input('Enter pow 1\n'))))
+print(polynom2.polynomial(int(input('Enter pow 2\n'))))
 data1 = open('poly1.txt', 'r')
 data2 = open('poly2.txt', 'r')
 line_count1 = 0
