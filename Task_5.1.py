@@ -10,8 +10,13 @@ def made_text(count, word='abc'):
         my_list.append(temp)
     return my_list
 
-text =  (' '.join(map(str, made_text(int(input("Введите длину текста ")), 'абв'))))
-print(text)
+number = int(input("Введите длину текста "))
+text =  (' '.join(map(str, made_text(number, 'абв'))))
+if number > 0:    
+    print(text)
+else:
+    print('Длина не корректна')
+
 print()
 new_text = text.replace('абв', '')
 print(new_text)
